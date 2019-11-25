@@ -23,6 +23,6 @@ public class SubscriptionController {
     public SubscriptionCreateResponse create(SubscriptionCreateRequest subscriptionCreateRequest){
         log.info("Subscription create request received={}", subscriptionCreateRequest.toString());
         Subscription subscription = subscriptionCommandService.create(subscriptionCreateRequest);
-        return  SubscriptionCreateResponse.builder().externalId(subscription.getExternalId()).uuid(subscription.getUuid()).build();
+        return  SubscriptionCreateResponse.builder().externalId(null).uuid(subscription.getUuid()).build();
     }
 }

@@ -11,4 +11,7 @@ import lombok.Setter;
 @Setter
 public class SubscriptionCreateRequest {
     private String uuid;
+    private String tenant;
+    private String token;
+    private String payload;
 }

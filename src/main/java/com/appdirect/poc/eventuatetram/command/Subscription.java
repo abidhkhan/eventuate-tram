@@ -21,6 +21,8 @@ public class Subscription {
     @GeneratedValue(strategy = GenerationType.IDENTITY  )
     private Long id;
     private String uuid;
-    private String externalId;
     private String tenant;
+    private String token;
+    private String payload;
+
 }

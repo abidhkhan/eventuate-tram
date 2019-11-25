@@ -1,7 +1,7 @@
 subscriptionservice:
   build: ./
   ports:
-    - "8080:8080"
+    - "8081:8081"
   volumes:
     - ./build/libs:/app
   links:
